@@ -2,6 +2,7 @@ import EventEmitter from './eventemitter';
 
 export class Inventory extends EventEmitter {
     constructor() {
+        super();
         this.itemMap = new Map();
     }
 
