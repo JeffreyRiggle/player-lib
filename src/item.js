@@ -1,7 +1,9 @@
 import EventEmitter from './eventemitter';
+import './property';
 
-export class Item extends EventEmitter {
+class Item extends EventEmitter {
     constructor(name, description) {
+        super();
         this.properties = [];
         this.name = name;
         this.description = description;
@@ -30,3 +32,5 @@ export class Item extends EventEmitter {
         this.emit(this.changedEvent, this);
     }
 }
+
+export default Item;

@@ -1,6 +1,8 @@
 import EventEmitter from './eventemitter';
+import './item';
+import './bodypart';
 
-export class Equipment extends EventEmitter {
+class Equipment extends EventEmitter {
     constructor() {
         super();
         this.equiped = new Map();
@@ -39,3 +41,5 @@ export class Equipment extends EventEmitter {
         return this.equiped.get(bodyPart);
     }
 }
+
+export default Equipment;

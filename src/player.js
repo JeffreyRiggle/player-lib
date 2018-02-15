@@ -1,6 +1,9 @@
-import { Inventory } from "./inventory";
-import { Equipment } from "./equipment";
+import Inventory from "./inventory";
+import Equipment from "./equipment";
 import EventEmitter from './eventemitter';
+import './attribute';
+import './characteristic';
+import './bodypart';
 
 export class Player extends EventEmitter {
     constructor(name) {

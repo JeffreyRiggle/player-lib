@@ -1,6 +1,7 @@
 import EventEmitter from './eventemitter';
+import './item';
 
-export class Inventory extends EventEmitter {
+class Inventory extends EventEmitter {
     constructor() {
         super();
         this.itemMap = new Map();
@@ -40,3 +41,5 @@ export class Inventory extends EventEmitter {
         this.emit(this.changedEvent, {added: [], changed: [], removed: removed});
     }
 }
+
+export default Inventory;

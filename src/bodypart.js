@@ -1,6 +1,7 @@
 import EventEmitter from './eventemitter';
+import './characteristic';
 
-export class BodyPart extends EventEmitter {
+class BodyPart extends EventEmitter {
     constructor(name, description) {
         super();
         this.name = name;
@@ -31,3 +32,5 @@ export class BodyPart extends EventEmitter {
         this.emit(this.changedEvent, this);
     }
 }
+
+export default BodyPart;
