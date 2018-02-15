@@ -1,6 +1,6 @@
 import EventEmitter from './eventemitter';
 
-export class NamedObject extends EventEmitter {
+class NamedObject extends EventEmitter {
     constructor(name, description, value) {
         super();
         this.name = name;
@@ -18,6 +18,8 @@ export class NamedObject extends EventEmitter {
 
     set value(value) {
         this._value = value;
-        this.emit(this.changedEvent, this);
+        this.emit(this.changedEvent, this._value);
     }
 }
+
+export default NamedObject;

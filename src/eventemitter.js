@@ -22,7 +22,7 @@ class EventEmitter {
     }
 
     emit(event) {
-        var i, listeners, args = [].slice.call(arguemnts, 1);
+        var i, listeners, args = [].slice.call(arguments, 1);
 
         if (typeof this.events[event] !== 'object') {
             return;
