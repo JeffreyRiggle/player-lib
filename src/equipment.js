@@ -14,7 +14,7 @@ class Equipment extends EventEmitter {
 
     equip(bodyPart, item) {
         let e = {
-            bodyPart: bodyPart,
+            bodypart: bodyPart,
             item: item
         };
 
@@ -28,9 +28,15 @@ class Equipment extends EventEmitter {
     }
 
     unequip(bodyPart) {
+        let item = this.equiped.get(bodyPart);
+
+        if (!item) {
+            return;
+        }
+
         let e = {
-            item: this.equiped.get(bodyPart),
-            bodyPart: bodyPart
+            item: item,
+            bodypart: bodyPart
         };
 
         this.equiped.delete(bodyPart);

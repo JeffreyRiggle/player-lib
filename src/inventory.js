@@ -21,8 +21,9 @@ class Inventory extends EventEmitter {
     }
 
     removeItem(item) {
-        this.itemMap.delete(item);
-        this.emit(this.changedEvent, {added: [], changed: [], removed: [item]});
+        if (this.itemMap.delete(item)) {
+            this.emit(this.changedEvent, {added: [], changed: [], removed: [item]});
+        }
     }
 
     getItemAmount(item) {

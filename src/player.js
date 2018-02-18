@@ -5,7 +5,7 @@ import './attribute';
 import './characteristic';
 import './bodypart';
 
-export class Player extends EventEmitter {
+class Player extends EventEmitter {
     constructor(name) {
         super();
         this.name = name;
@@ -64,3 +64,5 @@ export class Player extends EventEmitter {
         this.attributes = [];
     }
 }
+
+export default Player;
