@@ -1,4 +1,4 @@
-import EventEmitter from './eventemitter';
+import { EventEmitter } from 'events';
 import './item';
 
 class Inventory extends EventEmitter {

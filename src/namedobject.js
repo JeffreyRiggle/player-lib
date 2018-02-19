@@ -1,4 +1,4 @@
-import EventEmitter from './eventemitter';
+import { EventEmitter } from 'events';
 
 class NamedObject extends EventEmitter {
     constructor(name, description, value) {

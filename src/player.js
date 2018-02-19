@@ -1,6 +1,6 @@
 import Inventory from "./inventory";
 import Equipment from "./equipment";
-import EventEmitter from './eventemitter';
+import { EventEmitter } from 'events';
 import './attribute';
 import './characteristic';
 import './bodypart';
