@@ -1,5 +1,5 @@
-import BodyPart from '../bodypart';
-import Characteristic from '../characteristic';
+import { BodyPart } from '../bodypart';
+import { Characteristic } from '../characteristic';
 
 describe('BodyPart', function() {
     var bodypart, name, description, chr;

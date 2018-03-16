@@ -1,4 +1,4 @@
-import Property from '../property';
+import { Property } from '../property';
 
 describe('property', function() {
     var prop, name, description, value;

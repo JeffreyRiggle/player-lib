@@ -1,6 +1,6 @@
-import Equipment from '../equipment';
-import Item from '../item';
-import BodyPart from '../bodypart';
+import { Equipment } from '../equipment';
+import { Item } from '../item';
+import { BodyPart } from '../bodypart';
 
 describe('Equipment', function() {
     var equip, bodypart, item, item2, callCount, changeData;

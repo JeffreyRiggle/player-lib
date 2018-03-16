@@ -1,4 +1,4 @@
-import Characteristic from '../characteristic';
+import { Characteristic } from '../characteristic';
 
 describe('characteristic', function() {
     var chr, name, description, value;

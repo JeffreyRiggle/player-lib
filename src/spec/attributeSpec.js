@@ -1,4 +1,4 @@
-import Attribute from '../attribute';
+import { Attribute } from '../attribute';
 
 describe('attribute', function() {
     var att, name, description, value;

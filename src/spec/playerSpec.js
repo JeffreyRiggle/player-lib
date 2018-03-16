@@ -1,7 +1,7 @@
-import Player from '../player';
-import Attribute from '../attribute';
-import BodyPart from '../bodypart';
-import Characteristic from '../characteristic';
+import { Player } from '../player';
+import { Attribute } from '../attribute';
+import { BodyPart } from '../bodypart';
+import { Characteristic } from '../characteristic';
 
 describe('Player', function() {
     var player;

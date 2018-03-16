@@ -1,5 +1,5 @@
-import Item from '../item';
-import Property from '../property';
+import { Item } from '../item';
+import { Property } from '../property';
 
 describe('Item', function() {
     var item, name, description, prop;

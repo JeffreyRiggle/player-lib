@@ -1,5 +1,5 @@
-import Inventory from '../inventory';
-import Item from '../item';
+import { Inventory } from '../inventory';
+import { Item } from '../item';
 
 describe('Inventory', function() {
     var inv, item, updateEvent, callCount;

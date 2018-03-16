@@ -1,11 +1,8 @@
-import Inventory from "./inventory";
-import Equipment from "./equipment";
+import { Inventory } from "./inventory";
+import { Equipment } from "./equipment";
 import { EventEmitter } from 'events';
-import './attribute';
-import './characteristic';
-import './bodypart';
 
-class Player extends EventEmitter {
+export class Player extends EventEmitter {
     constructor(name) {
         super();
         this.name = name;
@@ -64,5 +61,3 @@ class Player extends EventEmitter {
         this.attributes = [];
     }
 }
-
-export default Player;
