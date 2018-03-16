@@ -39,6 +39,7 @@ export class Equipment extends EventEmitter {
 
         this.equiped.delete(bodyPart);
         this.emit(this.changedEvent, {added: [], changed: [], removed: [e]});
+        return item;
     }
 
     getEquip(bodyPart) {
