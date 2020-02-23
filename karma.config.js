@@ -10,6 +10,7 @@ module.exports = function(config) {
         preprocessors: {
             '**/*Spec.js': ['webpack']
         },
+        webpack: webpackConfig,
         reporters: ['mocha'],
         port: 9876,
         color: true,
