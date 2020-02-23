@@ -1,15 +1,26 @@
 import { EventEmitter } from 'events';
 
+/**
+ * The equipment a player has.
+ */
 export class Equipment extends EventEmitter {
     constructor() {
         super();
         this.equiped = new Map();
     }
 
+    /**
+     * Event that is emitted when the equipment changes.
+     */
     get changedEvent() {
         return 'onChanged';
     }
 
+    /**
+     * 
+     * @param {BodyPart} bodyPart The body part to equip.
+     * @param {Item} item The item to equip to that body part.
+     */
     equip(bodyPart, item) {
         let e = {
             bodypart: bodyPart,
@@ -25,6 +36,10 @@ export class Equipment extends EventEmitter {
         }
     }
 
+    /**
+     * 
+     * @param {BodyPart} bodyPart The body part to remove equipment from.
+     */
     unequip(bodyPart) {
         let item = this.equiped.get(bodyPart);
 
@@ -42,6 +57,12 @@ export class Equipment extends EventEmitter {
         return item;
     }
 
+    /**
+     * 
+     * @param {BodyPart} bodyPart The body part to check equipment for.
+     * 
+     * @returns The Item equip to that body part.
+     */
     getEquip(bodyPart) {
         return this.equiped.get(bodyPart);
     }
