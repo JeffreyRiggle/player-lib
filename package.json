@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "author": "<JeffreyRiggle@gmail.com>",
   "license": "MIT",
+  "main": "dist/main.js",
   "scripts": {
     "test": "karma start karma.config.js",
     "doc": "jsdoc src -d docs",

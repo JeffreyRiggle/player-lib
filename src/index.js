@@ -7,7 +7,7 @@ import { Item } from './item';
 import { Player } from './player';
 import { Property } from './property';
 
-module.exports = {
+export {
     Attribute,
     BodyPart,
     Characteristic,
